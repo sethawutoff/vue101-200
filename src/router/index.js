@@ -1,6 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
+import NumberList from '@/views/NumberList';
+import PokemonList from '@/views/PokemonList';
+import Pokedex from '@/views/Pokedex'
 
 Vue.use(VueRouter)
 
@@ -9,6 +12,21 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/numbers',
+    name: 'NumberList',
+    component: NumberList
+  },
+  {
+    path: '/Pokemons',
+    name: 'PokemonList',
+    component: PokemonList
+  },
+  {
+    path: '/Pokedex',
+    name: 'Pokedex',
+    component: Pokedex
   },
   {
     path: '/about',
